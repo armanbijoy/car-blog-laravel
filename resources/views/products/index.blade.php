@@ -8,11 +8,13 @@
 <body>
     <h1>Products</h1>
 
+    <a href="{{route('products')}}"> Products </a>
+
  
        
      
 
-        <p> {{$products}} </p>
+        
     
         
         

@@ -9,11 +9,8 @@ class ProductController extends Controller
    
     public function index()
     {
-        $title = 'Welcome to laravel 8';
-        $des = 'Arman Bijoy';
-        
-        
-        return view('products.index')->with('data', $data );
+        print_r(route('products'));
+        return view('products.index');
     
     }
 
