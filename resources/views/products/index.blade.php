@@ -10,10 +10,10 @@
 
  
        
-        @foreach($data as $item)
+     
 
-        <p> {{$item}} </p>
-        @endforeach
+        <p> {{$products}} </p>
+    
         
         
 

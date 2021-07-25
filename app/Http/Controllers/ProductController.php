@@ -11,13 +11,8 @@ class ProductController extends Controller
     {
         $title = 'Welcome to laravel 8';
         $des = 'Arman Bijoy';
-        $data = [
-            'productOne' => 'Iphone',
-            'productTwo' => 'Samsung'
-        ];
-        // return view('products.index', compact('title', 'des'));
-    
-        //return view('products.index')->with('tit', $title);
+        
+        
         return view('products.index')->with('data', $data );
     
     }
@@ -25,5 +20,18 @@ class ProductController extends Controller
     public function about()
     {
         return 'About us page';
+    }
+
+    public function show($name){
+
+        $data = [
+            'productOne' => 'Iphone',
+            'productTwo' => 'Samsung'
+        ];
+
+        return view('products.index',[
+            'products'=> $data[$name] ?? 'Product ' . $name . ' doesnt exist'
+        ]);
+
     }
 }

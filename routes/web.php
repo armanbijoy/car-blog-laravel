@@ -5,6 +5,4 @@ use App\Http\Controllers\ProductController;
 
 
 Route::get('/products', [ProductController::class,'index']);
-Route::get('/products/about', [ProductController::class,'about']);
-
-Route::get('/products','App\Http\Controllers\ProductController@index');
+Route::get('/products/{name}', [ProductController::class, 'show'])->where('name','[a-zA-Z]+'); 
