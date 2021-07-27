@@ -5,6 +5,6 @@
         title="Logo personal portfolio"
         />
     <p>
-        This website is created by Code With Dary
+        This website is created by Arman Bijoy
     </p>
 </div>
