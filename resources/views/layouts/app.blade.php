@@ -17,12 +17,7 @@
         rel="stylesheet" 
         href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
-
-    <style>
-        .active{
-            color: red;
-        }
-    </style>
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 
 <body>
