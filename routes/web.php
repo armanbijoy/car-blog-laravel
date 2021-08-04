@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::resource('/', CarsController::class);
+Route::resource('/cars', CarsController::class);

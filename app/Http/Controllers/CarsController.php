@@ -14,7 +14,9 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $cars = Car::where('name','=', 'Audi')->get();
+       $cars = Car::all();
+        
+       
        
        return view('cars.index', [
            'cars'=>$cars
@@ -28,7 +30,8 @@ class CarsController extends Controller
      */
     public function create()
     {
-        //
+    
+        return view('cars.create');
     }
 
     /**
@@ -39,7 +42,16 @@ class CarsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $car = Car::create([
+           'name' => $request->input('name'),
+           'founded' => $request->input('founded'),
+
+           'description' => $request->input('description')
+       ]);
+
+       return redirect('/cars');
+
+       
     }
 
     /**
